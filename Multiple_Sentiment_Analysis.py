@@ -61,9 +61,6 @@ nonlinprediction = nonlinclass.predict(testinstances)
 print("\n" "Nonlinear Support Vector Machine:" "\n")
 print(classification_report(testlabels, nonlinprediction, digits=3))
 
-# Advanced Task
-print("\n" "Advanced Task - Sentiment Analysis Predictor" "\n")
-
 # This function receives the raw text tsv files and converts them into two lists: instances and labels.
 # This allows for easy access to the individual sets of data for further processing.
 def getdata(input_csv):
