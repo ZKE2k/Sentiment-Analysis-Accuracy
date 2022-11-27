@@ -1,7 +1,8 @@
-A basic dataset sentiment analysis system.
+A basic dataset sentiment analysis accuracy testing system.
 
 Performs Random forest, support vector machine and K nearest neighbor sentiment analysis methods,
-as well as a custom made one, on whichever dataset is entered into the program
+as well as a custom made one, on whichever dataset is entered into the program.
+The goal of the program is to test the accuracy of various methods of sentiment analysis.
 
 Enter any training and test data into the beginning queries (as well as raw data if you 
 choose to) and ensure that the files are located within the same folder as the program for functionality.
