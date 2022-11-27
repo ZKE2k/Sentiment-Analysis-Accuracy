@@ -1,3 +1,4 @@
+
 # Importing is done here for all required packages.
 import pandas as pd
 from sklearn.metrics import classification_report
@@ -7,13 +8,7 @@ from nltk.tokenize import word_tokenize
 
 traind = input("Enter training dataset filename: ")
 testd = input("Enter test dataset filename: ")
-question = input("Do you have raw test data to query?")
-while question != "Yes" or "yes" and != "No" or "no":
-    print("Please answer either Yes or No")
-    question = input("Do you have raw test data to query?")
-else:
-    continue
-
+question = input("Do you have raw test data to query? Please answer Yes or No ")
 
 # This Converts the CSV tables into readable data arrays via numpy and pandas.
 # Doing this allows the CSV data to be read and used by the various AI algorithms.
@@ -81,7 +76,7 @@ def getdata(input_csv):
         labels.append(label)
     return instances, labels
 
-if question == "Yes" or == "yes":
+if question == "Yes" or question == "yes":
     rawtrain = input("Enter the raw training data filename: ")
     rawtest = input("Enter the raw test data filename: ")
     lexicon = input("Enter sentiment lexicon filename: ")
@@ -161,5 +156,3 @@ if question == "Yes" or == "yes":
 
     # This classification report displays the f-measure score among other metrics relating to the accuracy of this lexicon based algorithm.
     print(classification_report(labels, predictions, digits=3))
-else:
-    continue
